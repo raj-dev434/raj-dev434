@@ -36,4 +36,4 @@ I'm passionate about solving real-world problems with clean, efficient code. I'm
 
 - [GitHub](https://github.com/raj-dev434)
 - [LinkedIn](https://linkedin.com/in/raj-dev434)
-- 📧 muthuraj.kwork@gmail.com@example.com
+- 📧 muthuraj.kwork@gmail.com
