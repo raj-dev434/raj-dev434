@@ -1,0 +1,203 @@
+--TWO SUM--
+
+import java.util.*;
+class Main{
+    public static void main(String[]args){
+        int[]nums={2,7,10,11};
+        int target=21;
+        int[]result=twosum(nums,target);
+        System.out.println(Arrays.toString(result));
+
+    }
+    static int[] twosum(int[]nums,int target){
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            int complement=target-nums[i];
+            if(map.containsKey(complement)){
+                return new int[]{map.get(complement),i};
+            }
+            map.put(nums[i],i);
+
+        }
+        return new int[]{};
+    }
+}
+-----------------------------------------------------------------------------
+--DUPLICATE ELEMENT--
+import java.util.*;
+class Main{
+    public static void main(String[]args) {
+        int[] nums = {1, 2, 2, 3};
+        int result = duplicate(nums);
+        if (result == 1) {
+            System.out.print("true");
+        } else {
+            System.out.print("false");
+        }
+    }
+     static int duplicate(int[]nums) {
+            HashSet<Integer> set = new HashSet<>();
+            for (int num : nums) {
+                if (set.contains(num)) {
+                    return 1;
+                }
+                set.add(num);
+            }
+            return 0;
+        }
+    }
+----------------------------------------------------------------------------
+--VALID ANAGRAM--
+
+class Main {
+    public static void main(String[] args) {
+        String s = "ggii";
+        String t = "eekk";
+        System.out.print(anagram(s,t));
+    }
+    static boolean anagram(String s,String t){
+        int count[]=new int[26];
+        if(s.length()!=t.length()){
+            return false;
+        }
+        else{
+        for(int i=0;i<s.length();i++){
+            count[s.charAt(i)-'a']++;
+        }
+        for(int i=0;i<t.length();i++){
+            count[t.charAt(i)-'a']--;
+        }
+        for(int i=0;i<26;i++){
+            if(count[i]!=0){
+                return false;
+            }
+        }
+        }
+        return true;
+    }
+}
+------------------------------------------------------------------------------
+--ISOMORPHIC USING HASHMAP--
+
+import java.util.HashMap;
+
+class Main{
+    public static void main(String[]args){
+        String s="egg";
+        String t="bat";
+        System.out.print(Isisomorphic(s,t));
+    }
+    static boolean Isisomorphic(String s,String t){
+        if(s.length()!=t.length()){
+            return false;
+        }
+        HashMap<Character,Character>map1=new HashMap<>();
+        HashMap<Character,Character>map2=new HashMap<>();
+        for(int i=0;i<s.length();i++){
+            char a=s.charAt(i);
+            char b=t.charAt(i);
+            if(map1.containsKey(a)&&map1.get(a)!=b || map2.containsKey(b)&&map2.get(b)!=a){
+                return false;
+            }
+            else {
+                map1.put(a,b);
+                map2.put(b,a);
+            }
+        }
+        return true;
+    }
+}
+-------------------------------------------------------------------------------------------
+--WORD PATTERN--
+import java.util.HashMap;
+
+class Main{
+    public static void main(String[]args){
+        String p="abbb";
+        String word="cat dog dog cat";
+        System.out.print(isWordpattern(p,word));
+    }
+    static boolean isWordpattern(String p,String word){
+       String [] words=word.split(" ");
+       if(p.length()!=words.length){
+           return false;
+       }
+       HashMap<Character,String>map1=new HashMap<>();
+       HashMap<String,Character>map2=new HashMap<>();
+       for(int i=0;i<p.length();i++){
+           char a=p.charAt(i);
+           String b=words[i];
+           if(map1.containsKey(a)&&!map1.get(a).equals(b) || map2.containsKey(b)&&map2.get(b)!=a){
+               return false;
+           }
+           else{
+               map1.put(a,b);
+               map2.put(b,a);
+           }
+       }
+       return true;
+    }
+}
+------------------------------------------------------------------------------------------------------
+--INTERSECTION OF ARRAYS--
+import java.util.Arrays;
+import java.util.HashSet;
+
+class Main{
+    public static void main(String[]args){
+        int []nums1={1,2,2,3};
+        int[]nums2={2,2,3};
+        System.out.print(Arrays.toString(intersection(nums1,nums2)));
+    }
+    static int[] intersection(int[]nums1, int[]nums2){
+        HashSet<Integer>set=new HashSet<>();
+        HashSet<Integer>result=new HashSet<>();
+        for(int num:nums1){
+            set.add(num);
+        }
+        for(int num:nums2){
+            if(set.contains(num)){
+                result.add(num);
+            }
+        }
+        int []results=new int[result.size()];
+        int i=0;
+        for(int num:result){
+            results[i++]=num;
+        }
+        return results;
+    }
+}
+-------------------------------------------------------------------------------------------------------------
+--INTERSECTION OF TWO ARRAYS--
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Arrays;
+class Main{
+    public static void main(String[]args){
+        int []nums1={1,2,3,2};
+        int[] nums2={2,2};
+        System.out.print(Arrays.toString(intersection(nums1,nums2)));
+    }
+    static int[] intersection(int[]nums1,int[]nums2){
+        HashMap<Integer,Integer>freq= new HashMap<>();
+        ArrayList<Integer>list=new ArrayList<>();
+        for(int num:nums1){
+            freq.put(num,freq.getOrDefault(num,0)+1);
+        }
+        for(int num:nums2){
+            if(freq.containsKey(num)&&freq.get(num)>0){
+                list.add(num);
+                freq.put(num,freq.get(num)-1);
+            }
+        }
+        int []result=new int[list.size()];
+        int i=0;
+        for(int num:list){
+            result[i++]=num;
+        }
+        return result;
+    }
+}
+-------------------------------------------------------------------------------------------------------------
