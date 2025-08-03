@@ -21,8 +21,10 @@ I'm passionate about solving real-world problems with clean, efficient code. I'm
 
 - [**Breast Cancer Prediction App**](https://github.com/raj-dev434/breast-cancer-predictor): Machine Learning app using Logistic Regression, SVM, Random Forest (Streamlit-based).
 - [**E-commerce Website**](https://github.com/raj-dev434/ecommerce-php): PHP, HTML, MySQL based shopping site built during internship.
-- [**DSA Practice Repo**](https://github.com/raj-dev434/dsa-practice): Solutions to common coding problems with patterns and explanations.
-  - [View Hashmap DSA Notes](hashmap.txt)
+- [**DSA Practice Repo**](https://github.com/raj-dev434/dsa-practice): Below i given the solution for each approach in java ,which help for strengthing dsa basic
+  - [View Hashmap](hashmap.txt)
+  - [View binary Search](binarysearch.txt)
+  - [view two pointer](twopointer.txt)
 
 ---
 
