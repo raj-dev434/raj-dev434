@@ -22,7 +22,7 @@ I'm passionate about solving real-world problems with clean, efficient code. I'm
 ## 📌 Projects
 
 - [**Breast Cancer Prediction App**](https://github.com/raj-dev434/breast-cancer-predictor): Machine Learning app using Logistic Regression, SVM, Random Forest (Streamlit-based).
-- [**MY CURRENT PROJECT**](https://github.com/raj-dev434/ecommerce-php): PHP, HTML, MySQL based shopping site built during internship.
+- [**MY CURRENT PROJECT**](https://github.com/raj-dev434?tab=repositories): Currently working on typescript 
 - [**DSA Practice Repo**](https://github.com/raj-dev434/dsa-practice): Below i given the solution for each approach in java ,which help for strengthing dsa basic
   - [View Hashmap](hashmap.txt)
   - [View binary Search](binarysearch.txt)
@@ -50,6 +50,8 @@ I'm passionate about solving real-world problems with clean, efficient code. I'm
 </p>
 
 ---
+### 🚀 Recent Contributions
+[![PR #13](https://img.shields.io/badge/PR%20%2313-Merged-brightgreen?style=for-the-badge&logo=github)](https://github.com/OWNER/REPO/pull/13)
 
 ## 📫 Connect with Me
 
