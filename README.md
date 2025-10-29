@@ -31,7 +31,7 @@ I'm passionate about solving real-world problems with clean, efficient code. I'm
 
 ## 📈 GitHub Stats
 
-![Raj's GitHub Stats](https://github-readme-stats.vercel.app/api?username=raj-dev434&show_icons=true&theme=radical)
+![Taehyun's GitHub Repository Contribution stats](https://github-contributor-stats.vercel.app/api?username=raj-dev434)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raj-dev434&layout=compact)
 
 
