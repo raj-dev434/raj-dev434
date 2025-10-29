@@ -50,8 +50,6 @@ I'm passionate about solving real-world problems with clean, efficient code. I'm
 </p>
 
 ---
-### 🚀 Recent Contributions
-[![PR #13](https://img.shields.io/badge/PR%20%2313-Merged-brightgreen?style=for-the-badge&logo=github)](https://github.com/OWNER/REPO/pull/13)
 
 ## 📫 Connect with Me
 
